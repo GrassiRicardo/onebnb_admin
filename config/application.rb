@@ -10,8 +10,8 @@ Bundler.require(*Rails.groups)
 
 module OnebnbAdmin
   class Application < Rails::Application
-    # Settings in config/environments/* take precedence over those specified here.
-    # Application configuration should go into files in config/initializers
-    # -- all .rb files in that directory are automatically loaded.
+    config.to_prepare do
+      evise::SessionsController.layout proc{ |controller| action_name == 'new' ? "devise"   : "application" }
+    end
   end
 end

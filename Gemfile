@@ -29,6 +29,7 @@ gem 'cloudinary'
 gem 'carrierwave'
 gem 'devise'
 gem 'rails_admin_rollincode', :git => 'https://github.com/GrassiRicardo/rails_admin_customized.git'
+gem 'searchkick'
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
