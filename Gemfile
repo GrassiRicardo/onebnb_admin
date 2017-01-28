@@ -27,8 +27,8 @@ gem 'rails_admin', github: 'sferik/rails_admin'
 gem 'mini_magick'
 gem 'cloudinary'
 gem 'carrierwave'
-
 gem 'devise'
+gem 'rails_admin_rollincode', :git => 'https://github.com/GrassiRicardo/rails_admin_customized.git'
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
