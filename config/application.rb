@@ -9,9 +9,6 @@ ENV['RAILS_ADMIN_THEME'] = 'rollincode'
 Bundler.require(*Rails.groups)
 
 module OnebnbAdmin
-  class Application < Rails::Application
-    config.to_prepare do
-      evise::SessionsController.layout proc{ |controller| action_name == 'new' ? "devise"   : "application" }
-    end
+  class Application < Rails::Application    
   end
 end

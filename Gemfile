@@ -28,6 +28,7 @@ gem 'mini_magick'
 gem 'cloudinary'
 gem 'carrierwave'
 gem 'devise'
+gem 'devise-bootstrap-views'
 gem 'rails_admin_rollincode', :git => 'https://github.com/GrassiRicardo/rails_admin_customized.git'
 gem 'searchkick'
 
