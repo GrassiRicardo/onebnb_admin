@@ -30,6 +30,7 @@ gem 'carrierwave'
 gem 'devise'
 gem "bootstrap-sass-rails", "~> 2.2.2.0"
 gem 'rails_admin_rollincode', :git => 'https://github.com/GrassiRicardo/rails_admin_customized.git'
+gem 'prawn-rails'
 gem 'searchkick'
 
 # Use jquery as the JavaScript library

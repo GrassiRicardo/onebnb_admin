@@ -1,6 +1,9 @@
 RailsAdmin.config do |config|
   config.main_app_name = Proc.new { |controller| [ "OneBnb", "Admin - #{controller.params[:action].try(:titleize)}" ] }
 
+  require Rails.root.join('lib', 'rails_admin', 'rails_admin_pdf.rb')
+  RailsAdmin::Config::Actions.register(RailsAdmin::Config::Actions::Pdf)
+
   ## == Devise ==
   config.authenticate_with do
     warden.authenticate! scope: :user
@@ -26,5 +29,6 @@ RailsAdmin.config do |config|
     edit
     delete
     show_in_app
+    pdf
   end
 end
